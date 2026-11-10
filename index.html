@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>11 November 2025 · Reni &amp; Shemaiah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#14102b; --night2:#1f1747; --lilac:#b9a7f5; --rose:#ff8fb1; --gold:#ffc95c; --ink:#f4efff; --mute:#a99fd0;
+  --serif:"Fraunces",Georgia,serif; --sans:"Nunito",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{background:var(--night)}
+body{min-height:100vh;color:var(--ink);font-family:var(--sans);line-height:1.6;
+  background:radial-gradient(120% 70% at 50% 0%,var(--night2),var(--night) 70%);overflow-x:hidden}
+
+/* twinkling sky */
+.sky{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.sky i{position:absolute;inset:0;background-repeat:repeat;animation:twinkle 4s ease-in-out infinite alternate}
+.sky i:nth-child(1){background-image:radial-gradient(1.5px 1.5px at 30px 40px,#fff,transparent),radial-gradient(1px 1px at 120px 150px,#fff,transparent),radial-gradient(1.5px 1.5px at 190px 70px,var(--lilac),transparent);background-size:220px 220px}
+.sky i:nth-child(2){background-image:radial-gradient(1px 1px at 80px 60px,#fff,transparent),radial-gradient(2px 2px at 250px 220px,var(--gold),transparent),radial-gradient(1px 1px at 300px 100px,#fff,transparent);background-size:340px 340px;animation-delay:-2s;animation-duration:5.5s}
+@keyframes twinkle{from{opacity:.25}to{opacity:1}}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.25rem}
+.scene{width:min(94vw,470px);height:auto;margin-bottom:1.5rem;overflow:visible}
+.boy{animation:peek 2.2s .6s cubic-bezier(.3,1.35,.5,1) backwards}
+@keyframes peek{from{transform:translateY(72px)}}
+.girlhead{transform-origin:270px 118px;transform:rotate(-6deg);animation:notice 1.2s 2.6s ease-in-out backwards}
+@keyframes notice{from{transform:rotate(7deg)}}
+.tail{transform-origin:288px 148px;animation:swish 2.4s ease-in-out infinite alternate}
+@keyframes swish{from{transform:rotate(-8deg)}to{transform:rotate(12deg)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+.eye.g{animation-delay:-2s}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.winkeye{animation:wo 6s 3.6s infinite}
+.winkarc{opacity:0;animation:wa 6s 3.6s infinite}
+.spark{opacity:0;transform-box:fill-box;transform-origin:center;animation:ws 6s 3.6s infinite}
+@keyframes wo{0%,6%{opacity:1}8%,22%{opacity:0}26%,100%{opacity:1}}
+@keyframes wa{0%,6%{opacity:0}8%,22%{opacity:1}26%,100%{opacity:0}}
+@keyframes ws{0%,8%{opacity:0;transform:scale(.2)}14%{opacity:1;transform:scale(1.25)}22%{opacity:1;transform:scale(1)}28%,100%{opacity:0}}
+.blush{opacity:.85;animation:blush 1.4s 4s ease-out backwards,flush 3s 5.4s ease-in-out infinite}
+@keyframes blush{from{opacity:0}}
+@keyframes flush{50%{opacity:.5}}
+.moon{animation:rise 2s .2s ease-out backwards}
+
+h1{font:500 clamp(2.4rem,9vw,4.6rem)/1.05 var(--serif);animation:focus 2.2s 4.6s ease-out backwards}
+@keyframes focus{from{opacity:0;filter:blur(14px);letter-spacing:.25em}}
+.tag{margin-top:1rem;font:italic 400 1.2rem var(--serif);color:var(--lilac);animation:rise 1.4s 5.9s ease-out backwards}
+.count{margin-top:1.75rem;color:var(--mute);animation:rise 1.4s 6.7s ease-out backwards}
+.count b{color:var(--gold);font:500 1.5rem var(--serif)}
+.down{margin-top:3rem;color:var(--mute);font-size:.9rem;animation:rise 1.4s 7.4s ease-out backwards,bob 2.4s 8.8s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+@keyframes bob{50%{transform:translateY(6px)}}
+
+/* her lines */
+.lines{max-width:480px;margin:0 auto;padding:2rem 1.25rem 4rem}
+.lines h2{font:500 1.7rem/1.2 var(--serif);margin-bottom:.4rem}
+.lines>p{color:var(--mute);margin-bottom:2rem}
+.b{background:rgba(255,255,255,.07);border:1px solid rgba(185,167,245,.18);border-radius:22px 22px 22px 6px;
+  padding:.9rem 1.1rem;margin-bottom:1rem;max-width:92%;transition:opacity .7s ease,transform .7s ease}
+.b:nth-of-type(even){margin-left:auto;border-radius:22px 22px 6px 22px;border-color:rgba(255,143,177,.25)}
+.b q{display:block;font-weight:600;quotes:none}
+.b small{display:block;margin-top:.15rem;color:var(--mute);font-size:.88rem}
+.js .b:not(.in){opacity:0;transform:translateY(16px)}
+
+footer{text-align:center;padding:2rem 1.25rem 5rem}
+footer p{font:italic 400 1.35rem/1.5 var(--serif);max-width:20em;margin:0 auto}
+footer span{display:block;margin-top:1rem;color:var(--gold)}
+.heart{display:inline-block;animation:beat 1.8s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.25)}30%{transform:scale(1)}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .b{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i></i><i></i></div>
+
+<section class="hero">
+  <svg class="scene" viewBox="0 0 360 240" role="img" aria-label="A boy cat peeks over a wall at a girl cat sitting on the roof">
+    <circle class="moon" cx="60" cy="44" r="14" fill="#ffc95c" opacity=".9"/>
+    <!-- roof -->
+    <polygon points="170,206 360,112 360,240 170,240" fill="#2a2160"/>
+    <path d="M170 206 L360 112" stroke="#3a2f80" stroke-width="8"/>
+    <path d="M200 222 L360 143M240 232 L360 172" stroke="#3a2f80" stroke-width="2" opacity=".7"/>
+    <!-- girl cat -->
+    <path class="tail" d="M288 148 q36 -4 40 -34" fill="none" stroke="#ff8fb1" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="270" cy="134" rx="19" ry="24" fill="#ff8fb1"/>
+    <g class="girlhead">
+      <polygon points="251,92 253,70 266,82" fill="#ff8fb1"/><polygon points="289,92 287,70 274,82" fill="#ff8fb1"/>
+      <polygon points="255,88 255,77 263,83" fill="#ffd3e0"/>
+      <circle cx="270" cy="100" r="22" fill="#ff8fb1"/>
+      <path d="M290 74 l-9 -4 v9z M290 74 l9 -4 v9z" fill="#ffc95c"/><circle cx="290" cy="74" r="2.6" fill="#ffc95c"/>
+      <g class="eye g"><ellipse cx="262" cy="98" rx="4.6" ry="5.8" fill="#fff"/><circle cx="260.4" cy="99.4" r="2.8" fill="#14102b"/></g>
+      <g class="eye g"><ellipse cx="278" cy="98" rx="4.6" ry="5.8" fill="#fff"/><circle cx="276.4" cy="99.4" r="2.8" fill="#14102b"/></g>
+      <g class="blush"><circle cx="254" cy="106" r="6.5" fill="#e8457a"/><circle cx="286" cy="106" r="6.5" fill="#e8457a"/><path d="M250 104l3 4M254 103l3 4M258 104l3 4M282 104l3 4M286 103l3 4M290 104l3 4" stroke="#ffd3e0" stroke-width="1.1" stroke-linecap="round"/></g>
+      <polygon points="267,105 273,105 270,109" fill="#b3416a"/>
+      <path d="M250 104 L234 101M250 108 L234 110M290 104 L306 101M290 108 L306 110" stroke="#ffd3e0" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <!-- boy cat (rises from behind the wall) -->
+    <g class="boy">
+      <polygon points="71,118 74,92 92,105" fill="#b9a7f5"/><polygon points="119,118 116,92 98,105" fill="#b9a7f5"/>
+      <polygon points="76,112 77,99 87,106" fill="#6d58c4"/><polygon points="114,112 113,99 103,106" fill="#6d58c4"/>
+      <circle cx="95" cy="128" r="26" fill="#b9a7f5"/>
+      <g class="eye"><ellipse cx="84" cy="126" rx="5" ry="6" fill="#fff"/><circle cx="85.8" cy="124.4" r="3" fill="#14102b"/></g>
+      <g class="winkeye"><ellipse cx="106" cy="126" rx="5" ry="6" fill="#fff"/><circle cx="107.8" cy="124.4" r="3" fill="#14102b"/></g><path class="winkarc" d="M100 127 q6 -6 12 0" fill="none" stroke="#14102b" stroke-width="2.4" stroke-linecap="round"/><path class="spark" d="M127 112 l1.8 4.9 4.9 1.8 -4.9 1.8 -1.8 4.9 -1.8 -4.9 -4.9 -1.8 4.9 -1.8z" fill="#ffc95c"/>
+      <polygon points="92,134 98,134 95,138" fill="#6d58c4"/>
+      <path d="M70 134 L52 131M70 138 L52 140M120 134 L138 131M120 138 L138 140" stroke="#e4dbff" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <!-- wall -->
+    <rect x="0" y="148" width="150" height="92" fill="#2a2160"/>
+    <rect x="0" y="146" width="150" height="9" fill="#3a2f80"/>
+    <path d="M0 176H150M0 204H150M40 155V176M95 176V204M30 204V240" stroke="#3a2f80" stroke-width="2" opacity=".8"/>
+    <ellipse cx="82" cy="147" rx="9" ry="5.5" fill="#b9a7f5"/><ellipse cx="108" cy="147" rx="9" ry="5.5" fill="#b9a7f5"/>
+    </svg>
+  <h1>11 November 2025</h1>
+  <p class="tag">the day we started talking again</p>
+  <p class="count" id="count">Renita &amp; Shemaiah, still talking</p>
+  <p class="down">scroll, there are a few lines I kept</p>
+</section>
+
+<section class="lines">
+  <h2>Lines I kept</h2>
+  <p>From our chats, in Reni’s own words.</p>
+
+  <div class="b"><q>Sorry seriya… my intention is not to hurt u seriya</q><small>Sorry, okay? I never mean to hurt you.</small></div>
+  <div class="b"><q>Theva patuchu indha break</q><small>We needed this break.</small></div>
+  <div class="b"><q>Dhyaanathla irundhen moonu maaso 🧘‍♀️</q><small>I was in meditation for three months.</small></div>
+  <div class="b"><q>Neraya vishyo therunjukten</q><small>I learned a lot of things.</small></div>
+  <div class="b"><q>Namma oru moonu maaso pesaama irundhrupoma… apo edhumae interesting ah nadaklaya 😂</q><small>If we’d gone three months without talking, nothing interesting would have happened either.</small></div>
+  <div class="b"><q>Sahara dessert vida dry ah iruku da namma convo</q><small>Our conversation is drier than the Sahara desert.</small></div>
+  <div class="b"><q>Atonement neeya paaka sonna?</q><small>Atonement: was it you who told me to watch it?</small></div>
+</section>
+
+<footer>
+  <p>Friends, but too close to the heart. Glad the silence ended. <span class="heart">♥</span></p>
+  <span>Shemaiah</span>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// reveal lines as they scroll into view
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.3});
+document.querySelectorAll('.b').forEach(b=>io.observe(b));
+// days since 11 Nov 2025
+const start=new Date(2025,10,11),now=new Date();
+const days=Math.floor((new Date(now.getFullYear(),now.getMonth(),now.getDate())-start)/864e5);
+const c=document.getElementById('count');
+if(days>=0){
+  const yrs=Math.floor(days/365.25);
+  const ann=now.getMonth()===10&&now.getDate()===11&&yrs>=1;
+  c.innerHTML=ann?'<b>'+yrs+(yrs===1?' year':' years')+'</b> today':'<b>'+days.toLocaleString()+'</b> days since';
+}
+</script>
+</body>
+</html>
